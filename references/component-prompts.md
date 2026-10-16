@@ -1,4 +1,4 @@
-# 组件设计 Prompt 库（15 个通用组件）
+# 组件设计 Prompt 库（51 个通用组件）
 
 每个组件一张卡：定义 → 设计要点 → UI 生成提示词（直接投喂 Figma AI / 即梦 / v0 / Galileo 等 AI 界面工具）→ 黏土风封面推荐。
 
@@ -254,8 +254,8 @@ Rounded {圆角}, soft shadows, clean.
 
 ## 15 付费订阅 Paywall [实测：用户 8 张截图之 4 张付费订阅封面]
 **定义**：会员订阅页（付费墙）。
-**通用骨架（8 屏验证）**：左上关闭 X → 主视觉（照片拼贴/吉祥物/大字标题三选一）→ 标题 + slogan → 权益列表 → 价格选项（2-3 档）→ 大 CTA → 底部小字（自动续费/条款/恢复购买）。
-**设计要点（8 版式全收录）**：
+**通用骨架（9 屏验证）**：左上关闭 X → 主视觉（照片拼贴/吉祥物/大字标题三选一）→ 标题 + slogan → 权益列表 → 价格选项（2-3 档）→ 大 CTA → 底部小字（自动续费/条款/恢复购买）。
+**设计要点（9 版式全收录）**：
 - A 权益列表式：深色底，权益行（图标+标题+描述+右箭头），底部渐变大按钮"解锁全部功能"
 - B 价格卡式：照片拼贴主视觉 + "XX Pro"渐变字；价格选项（连续包年/连续包月），选中绿描边 + "首充优惠"角标；渐变"立即订阅"；续费小字
 - C 促销式：大标题 + 产品截图 +"新用户专享"角标；价格卡（1分钱体验/年度会员）；支付方式行；倒计时"限时活动"；金渐变"立即抢"
@@ -264,6 +264,7 @@ Rounded {圆角}, soft shadows, clean.
 - F 双档切换式：Premium/Premium+ 切换 pill；"Best value"角标价格卡（选中绿描边+对勾）
 - G 写真促销式："免费写真集"荧光黄大字；emoji 开头权益列表；价格删除线对比；"SALE"角标；黄绿渐变"立即订阅"
 - H 涂鸦式：涂鸦风标题 + 插画卡片；三档价格（Week/Month/3 Months)；"Start 3 days free trial"大按钮
+- I 价格档位卡式 [实测：sample-25 右屏]：三卡横排等宽，价格大字＋副文案（Coins/折算单价），选中金色描边＋微抬起；顶部配 Pro/Ultra 档位小切换 pill；档位间用"Best value"角标引导最贵档
 - 促销三件套（至少用一件）：角标（首充优惠/立省81%/SALE/Best value）、倒计时、删除线原价
 **UI 生成提示词**：
 ```
@@ -594,6 +595,7 @@ Trustworthy, clean, data-forward.
 - 双按钮版："就它了！/重新换一张"（火车票盲盒）；"查看详情/我知道了"
 - 券版：三券横排（¥20机票/¥50门票/¥20酒店），"开启白银之旅"
 - 抽奖版："¥50/¥118/¥220"三档，"再抽一次"，"离大奖仅一步之遥"
+- 挽留版 [实测：sample-92]：粉色系，"再想想吧"＋超大描边价格数字"¥176"＋"还有限时赠品"紧迫感文案＋平台图标行
 - 通用铁律：形状先讲故事，文字只讲金额；一个弹窗只讲一件事；CTA 永远胶囊大按钮
 **UI 生成提示词**：
 ```
@@ -661,3 +663,360 @@ Mobile order cards, 9:19.5, Chinese UI, clay style.
 Each: product row (thumb + name + spec), amount right-aligned bold, real pay in red.
 ```
 **黏土风封面**：黑底 + 白字"设计赏析-" + 黄字"订单卡片"；标题 `💥设计赏析｜订单卡片`
+
+---
+
+## 32 年度报告页 Annual Report Poster [实测：sample-36 右屏年度关键词海报、sample-37 左屏 MBTI 年度报告]
+**定义**：年度关键词/年度账单式竖版分享海报，大字关键词＋中央 3D 角色＋数据统计＋分享/保存 CTA。
+**通用骨架**：顶部年份/标题 → 超大关键词排印 → 中央角色形象 → 数据卡片行（3-4 格）→ 底部双按钮（分享给好友/保存图片）。
+**设计要点**：
+- 关键词字号 ≥48pt，占屏宽 80%，可配描边或渐变字
+- 数据卡：年度关键词解读 + 2-3 个趣味数据（年度之最/坚持天数）
+- 背景用梦幻渐变（紫/粉）或品牌色，角色居中
+- 按钮：分享（主按钮）+ 保存图片（次按钮），并排或上下
+**UI 生成提示词**：
+```
+Mobile annual report poster page, 9:19.5, Chinese UI, clay style.
+Vertical poster: top "2026 年度关键词", huge typography "佛系观察员" 48pt+, center 3D clay character, 3 data cards (年度坚持 128 天 / 最常使用功能 / 年度之最), dreamy purple gradient bg.
+Bottom: "分享给好友" primary + "保存图片" secondary buttons.
+```
+**黏土风封面**：黑底 + 白字"设计赏析-" + 黄字"年度报告页"；标题 `💥设计赏析｜年度报告页`
+
+---
+
+## 33 角色身份卡 Character Identity Card [实测：sample-35 右屏 AI 伙伴卡、sample-38 挂牌身份卡/ID CARD 人设卡]
+**定义**：AI 伙伴/人格/聊天人设的展示卡：角色形象＋名称徽章＋属性进度条＋一句话介绍＋行动按钮。
+**通用骨架**：角色形象（挂牌/证件式）→ 名称＋MBTI/徽章 → 属性条（活力/感性/好奇 + 评级词）→ 一句话介绍 → 行动按钮。
+**设计要点**：
+- 挂牌式：吊绳＋卡片，优点标签＋百分比属性
+- ID CARD 式：二次元立绘＋性别年龄＋喜好/特质 chips
+- 属性条用评级词（Max/Good）而非纯数字，更有性格感
+- 底部 CTA："让我们一起开始吧"/"生成专属人设"
+**UI 生成提示词**：
+```
+Mobile character identity card, 9:19.5, Chinese UI, clay style.
+ID card layout: 3D clay character avatar with lanyard, name "星尘" + INFP badge, 3 attribute bars (活力 Max / 感性 Good / 好奇 Max), one-line intro, bottom "生成专属人设" button.
+Stamp/badge decorations, pastel bg.
+```
+**黏土风封面**：黑底 + 白字"设计赏析-" + 黄字"角色身份卡"；标题 `💥设计赏析｜角色身份卡`
+
+---
+
+## 34 问答式偏好收集 Quiz Preference Onboarding [实测：sample-29 左屏心情/口味/酒量三连问]
+**定义**：一问一答收集用户偏好的 onboarding：对话气泡问题卡＋emoji 选项 chips，多步推进。区别于展示式引导页（16）。
+**通用骨架**：顶部步骤进度（STEP N/圆点）→ 对话气泡问题卡 → emoji＋文字选项 pill → 底部双按钮（随机一下/下一步）。
+**设计要点**：
+- 问题用聊天气泡口吻（"今天心情如何？"），选项带 emoji
+- 选项 pill：选中黑底反白 / 品牌色填充＋加粗，不只靠颜色
+- 每屏只问 1 题，3-5 题为宜；最后一题后给"生成中"过渡
+- 底部常配"随机一下"（跳过式趣味按钮）＋"下一步/今日特调"
+- B 辟谣问答式 [实测：sample-86 每日谣言粉碎机]：健康科普场景的"对/不对"二选一问答卡。绿色"对（有科学依据）"/紫色"不对（没有科学依据）"双按钮，答后展开科学依据＋话题标签签
+**UI 生成提示词**：
+```
+Mobile quiz-style preference onboarding, 9:19.5, Chinese UI, clay style.
+Chat bubble question card "今晚想喝点什么？", emoji option pills (🍺 啤酒 / 🍷 红酒 / 🥤 气泡水), selected black bg white text.
+Top STEP 2 dots, bottom "随机一下" ghost + "今日特调" primary buttons.
+```
+**黏土风封面**：黑底 + 白字"设计赏析-" + 黄字"问答式偏好收集"；标题 `💥设计赏析｜问答式偏好收集`
+
+---
+
+## 35 AI 生成等待态 AIGC Loading State [实测：sample-35 左屏灵魂伴侣画像生成中]
+**定义**：AI 生成中的情绪安抚占位态。区别于空状态（30）：后者覆盖无数据/出错，前者是"正在生成中"。
+**通用骨架**：氛围插画（星云/渐变）→ 拟人化文案（2-3 句轮播）→ 进度暗示（百分比/步骤）→ 可选"先去逛逛"出口。
+**设计要点**：
+- 文案拟人化："正在聆听星星的指引""灵魂的频率正在共振…"
+- 插画用紫色星云/梦幻渐变，配缓慢呼吸动效
+- 给进度感：百分比或"正在绘制第 2 步"，避免用户以为卡死
+- 超过 10 秒的生成必须给"后台生成，好了通知你"出口
+**UI 生成提示词**：
+```
+Mobile AI generating loading state, 9:19.5, Chinese UI, clay style.
+Purple nebula gradient illustration with breathing animation, poetic copy "正在聆听星星的指引…", step hint "正在绘制第 2/3 步", small "好了通知我" ghost button.
+```
+**黏土风封面**：黑底 + 白字"设计赏析-" + 黄字"AI 生成等待态"；标题 `💥设计赏析｜AI 生成等待态`
+
+---
+
+## 36 主题键盘 Keyboard Skin [实测：sample-4 黏土风输入法键盘，Skill 视觉 DNA 源头图]
+**定义**：整套输入法键盘皮肤（九宫格/26键），含配色体系＋装饰键＋顶部工具栏。
+**通用骨架**：顶部工具栏（剪贴板/颜文字/设置图标）→ 字母区（黏土质感按键＋彩色字母贴纸）→ 底部行（中英切换/空格/回车＋装饰键）。
+**设计要点**：
+- 按键：黏土质感底＋粗描边，字母用彩色贴纸风
+- 装饰键：骷髅/救生圈等 IP 键，强化主题记忆点
+- 九宫格与 26 键两套布局，候选词栏风格统一
+- 深色/浅色两版，夜间模式自动切换
+**UI 生成提示词**：
+```
+Mobile keyboard skin, 9:19.5, Chinese UI, clay style.
+QWERTY layout: orange-yellow clay keys with thick outline, colorful letter stickers, skull lifebuoy deco keys, top toolbar (clipboard/emoji/settings), candidate bar in matching style.
+```
+**黏土风封面**：黑底 + 白字"设计赏析-" + 黄字"主题键盘"；标题 `💥设计赏析｜主题键盘`
+
+---
+
+## 37 步骤进度条 Step Progress Bar [实测：sample-16 左上 2/4、sample-19 顶部 STEP 1、sample-17 顶部圆点]
+**定义**：多步骤流程（注册/引导/表单填写）顶部的步骤位置指示器。
+**通用骨架**：步骤标识（STEP N / 圆点序列 / 细进度条）＋ 当前步骤高亮 ＋ 常配"跳过/下一步"。
+**设计要点**：
+- 三种形态：细线形进度条 / "STEP N"英文标签 / 圆点序列 ○●●
+- 已完成段用品牌色填充，未完成灰色；当前步骤可加脉冲动效
+- 步骤 ≤5 步为宜，超过用"第 2/8 步"数字式
+- 返回上一步不清空已填内容（配一句"已保存"提示更佳）
+**UI 生成提示词**：
+```
+Mobile step progress bar, 9:19.5, Chinese UI, clay style.
+Top: "STEP 2" label + thin progress bar (brand yellow filled 2/4, rest gray), dot sequence alternative.
+Paired with "跳过" top-right and "下一步" bottom button.
+```
+**黏土风封面**：黑底 + 白字"设计赏析-" + 黄字"步骤进度条"；标题 `💥设计赏析｜步骤进度条`
+
+---
+
+## 38 翻牌抽奖 Flip Card Lottery [实测：sample-22 左屏集卡兑红包翻牌区]
+**定义**：营销/集卡活动中点击卡片翻转揭示奖励的抽奖交互。区别于集卡（13）：集卡是收集展示，翻牌是"抽"的动作。
+**通用骨架**：标题＋剩余次数 → 卡片矩阵（横排 4-5 张，背面统一）→ 点击翻转 reveal → 奖品兑换区 → 中奖名单跑马灯。
+**设计要点**：
+- 卡背统一花纹，翻转用 3D flip 动效＋音效感
+- 奖品兑换区："集齐必得"进度文案＋兑换按钮
+- 中奖名单用跑马灯（组件 08）增强氛围
+- 次数用完给"去集卡/分享得次数"出口，不留死路
+**UI 生成提示词**：
+```
+Mobile flip card lottery, 9:19.5, Chinese UI, clay style.
+4 cards in a row (uniform patterned backs), tap to 3D flip reveal prize, "剩余 2 次" counter on top.
+Below: prize exchange zone + winner marquee. Festive red-gold palette.
+```
+**黏土风封面**：黑底 + 白字"设计赏析-" + 黄字"翻牌抽奖"；标题 `💥设计赏析｜翻牌抽奖`
+
+---
+
+## 39 支付方式选择器 Payment Method Selector [实测：sample-25 左屏底部支付方式行]
+**定义**：收银台/订阅页底部选择支付渠道的单选行。
+**通用骨架**：渠道行（图标＋渠道名＋单选圆点）× N → 常与价格档、倒计时、"立即抢"按钮同屏。
+**设计要点**：
+- 整行可点，选中态：圆点品牌色实心＋行背景微 tint，不只靠圆点
+- 渠道图标用官方色（支付宝蓝/微信绿），不魔改
+- 默认选中上次使用的渠道，减少一步操作
+- 组合优惠时行内可加"减 ¥5"小标签
+**UI 生成提示词**：
+```
+Mobile payment method selector, 9:19.5, Chinese UI, clay style.
+Rows: 支付宝 (blue icon) / 微信支付 (green icon) / 银行卡, each full-row tappable, selected shows filled radio + tinted row bg.
+Above: price tier + countdown, below "立即抢" button.
+```
+**黏土风封面**：黑底 + 白字"设计赏析-" + 黄字"支付方式选择器"；标题 `💥设计赏析｜支付方式选择器`
+
+---
+
+## 40 漂浮卡片堆 Floating Card Cluster [实测：sample-28 左屏 Miley AI 卡片堆，版式变体]
+**定义**：多张功能卡片以不同角度倾斜、错落漂浮的展示布局（常用于落地/介绍屏）。区别于卡片设计（17）：后者是单卡版式，这是多卡空间布局。
+**通用骨架**：背景柔光 → 3-5 张卡片 5–15° 旋转错落 → 主标题＋CTA → 可配 page dots。
+**设计要点**：
+- 卡片旋转角度 5–15°，大小错落，前后有遮挡关系
+- 入场用 stagger 上浮动效，每张延迟 0.1s
+- 卡片内容：功能亮点（心情/记账/习惯/步数），图标＋一句话
+- 背景粉色柔光/渐变，突出漂浮感
+**UI 生成提示词**：
+```
+Mobile floating card cluster intro screen, 9:19.5, Chinese UI, clay style.
+4 feature cards tilted 5-15° overlapping on pink glow bg, staggered float-in animation.
+Headline + "开始使用" button below, page dots optional.
+```
+**黏土风封面**：黑底 + 白字"设计赏析-" + 黄字"漂浮卡片堆"；标题 `💥设计赏析｜漂浮卡片堆`
+
+---
+
+## 41 服务者简历页 Provider Resume Page [实测：sample-37 右屏闲鱼服务者简历]
+**定义**：他人/服务者视角的主页（非"我"的主页）：角色形象＋口号＋身份徽章＋技能标签＋服务 CTA。区别于个人主页（10）：后者是用户自己的设置型主页。
+**通用骨架**：角色形象＋"要帮忙来找我"口号 → 身份徽章/印章（本人承诺真实）→ 技能标签 → 服务案例/评价 → 黄色行动按钮（+我的副业/立即预约）。
+**设计要点**：
+- 顶部口号要口语化（"要帮忙来找我"），拉近距离
+- 印章式信任元素："本人承诺真实"/实名认证徽章
+- 技能标签用 chips，一屏 4-8 个
+- CTA 用高饱和黄色按钮，区别于普通主页
+**UI 生成提示词**：
+```
+Mobile provider resume page, 9:19.5, Chinese UI, clay style.
+Top: monster character + slogan "要帮忙来找我", "本人承诺真实" stamp badge, skill chips row, reviews snippet.
+Bottom yellow "+我的副业" CTA button.
+```
+**黏土风封面**：黑底 + 白字"设计赏析-" + 黄字"服务者简历页"；标题 `💥设计赏析｜服务者简历页`
+
+---
+
+## 42 倾斜便签卡片墙 Sticky Memo Wall [实测：sample-27 右屏聊天话题卡片墙，版式变体]
+**定义**：彩色便签纸式话题卡片墙，轻微旋转角度营造手工感。
+**通用骨架**：分段切换（风格/记忆）→ 便签卡片墙（粉/蓝/绿/黄 pastel，±3° 旋转）→ 每张：标题＋内容两段式。
+**设计要点**：
+- 便签 ±3° 旋转，边缘微卷曲阴影，手工感
+- pastel 四色轮换，同屏不重色
+- 可配分段切换（风格/记忆）或 masonry 瀑布流
+- 点击便签展开详情，带"钉住"置顶交互更佳
+**UI 生成提示词**：
+```
+Mobile sticky memo card wall, 9:19.5, Chinese UI, clay style.
+Pastel sticky notes (pink/blue/green/yellow) rotated ±3° with curled-edge shadow, title + 2-line content each.
+Top segmented switch （风格/记忆）, masonry layout.
+```
+**黏土风封面**：黑底 + 白字"设计赏析-" + 黄字"倾斜便签卡片墙"；标题 `💥设计赏析｜倾斜便签卡片墙`
+
+---
+
+## 43 可见范围设置 Visibility Selector [实测：sample-44 右屏匿名开关、sample-45 公开可见/谁可以看、sample-46 公开范围，发布页子模式]
+**定义**：发布时的可见范围选择：公开/谁可以看/提醒谁看/匿名开关。常作为发布页（18）的子模块。
+**通用骨架**：锁形图标＋状态文字 → 选项列表行（公开/好友可见/仅自己/匿名）→ 部分 App 配"提醒谁看"多选。
+**设计要点**：
+- 选项用列表行＋单选，状态文字红色/灰色区分（公开灰/仅自己红）
+- 匿名开关用 switch，开启后头像变"匿名用户"
+- 放在发布页二级入口，不占一屏
+- 切换后给 toast 确认（"已设为仅自己可见"）
+**UI 生成提示词**：
+```
+Mobile visibility selector (publish sub-module), 9:19.5, Chinese UI, clay style.
+Lock icon + status text, option rows: 公开 / 好友可见 / 仅自己 / 匿名发布 switch.
+Selected row highlighted, toast "已设为仅自己可见" on change.
+```
+**黏土风封面**：黑底 + 白字"设计赏析-" + 黄字"可见范围设置"；标题 `💥设计赏析｜可见范围设置`
+
+---
+
+## 44 问卷式引导页 Quiz Onboarding [实测：sample-78 运动情况问卷、sample-81 训练目标问卷]
+**定义**：吉祥物对话气泡＋插画选项卡＋顶部步骤进度条的重型 onboarding 问卷。区别于问答式偏好收集（34）：34 是轻量 emoji 选项 pill，这个是插画选项卡＋诊断感流程。
+**通用骨架**：顶部步骤进度条 → 吉祥物对话气泡（"备好器械，开始蜕变鸭！"）→ 2-4 张插画选项卡 → 底部"下一步"。
+**设计要点**：
+- 选项卡配手绘插画（非纯 emoji），选中黄色填充＋加粗
+- 吉祥物每题换一句对话，保持陪伴感
+- 3-5 题，问卷结束直接进计划结果页（45），形成闭环
+- 顶部进度条＋"STEP N"，可回退修改
+**UI 生成提示词**：
+```
+Mobile quiz onboarding page, 9:19.5, Chinese UI, clay style.
+Top step progress bar, duck mascot speech bubble "备好器械，开始蜕变鸭！", 4 illustrated option cards (2x2 grid), selected yellow fill.
+Bottom "下一步" button.
+```
+**黏土风封面**：黑底 + 白字"设计赏析-" + 黄字"问卷式引导页"；标题 `💥设计赏析｜问卷式引导页`
+
+---
+
+## 45 计划结果页 Plan Result Page [实测：sample-81 消灭小肚子专属计划]
+**定义**：问卷完成后生成的专属计划页：倒计时＋趋势曲线图＋诊断报告入口。
+**通用骨架**：大数字倒计时（"距离实现目标，还有 28 天"）→ 趋势曲线图（体重/气质双曲线）→ 效果徽章（"预计 4 周内有效果"）→ "开启专属"CTA。
+**设计要点**：
+- 倒计时数字 ≥40pt，是视觉焦点
+- 曲线图用双曲线对比（现在 vs 目标），配"诊断报告"入口
+- 徽章给确定性（"预计 4 周内有效果"），降低决策焦虑
+- CTA 用"开启专属计划"，不用"立即购买"，先价值后付费
+**UI 生成提示词**：
+```
+Mobile plan result page, 9:19.5, Chinese UI, clay style.
+Big countdown "距离实现目标，还有 28 天", dual-line trend chart (weight/figure), badge "预计 4 周内有效果", "开启专属计划" CTA button.
+```
+**黏土风封面**：黑底 + 白字"设计赏析-" + 黄字"计划结果页"；标题 `💥设计赏析｜计划结果页`
+
+---
+
+## 46 打卡日历条 Check-in Calendar Strip [实测：sample-82 训练主页周历]
+**定义**：横向周历条，每日配吉祥物状态插画（训练/休息），附累计打卡徽章。
+**通用骨架**：周一～周日横条 → 每日小插画（训练鸭/休息垫子）→ 今日高亮 → "已完成 N/28 天"徽章。
+**设计要点**：
+- 每日状态用插画区分（训练/休息/未到），不只靠颜色
+- 今日用品牌色高亮＋"今日"标签
+- 徽章："已完成 0/28 天"，黄色，强化连续性
+- 点击某日可回看当日记录（配空态"这天休息了"）
+**UI 生成提示词**：
+```
+Mobile check-in calendar strip, 9:19.5, Chinese UI, clay style.
+Horizontal Mon-Sun strip, each day with tiny duck illustration (training/resting), today highlighted yellow.
+Badge "已完成 12/28 天" below.
+```
+**黏土风封面**：黑底 + 白字"设计赏析-" + 黄字"打卡日历条"；标题 `💥设计赏析｜打卡日历条`
+
+---
+
+## 47 吊牌卡 Hang-tag Card [实测：sample-83 OPPO 参数吊牌/用户标签吊牌]
+**定义**：顶部带金属圆环孔的挂签式卡片，用于商品规格或用户标签展示。
+**通用骨架**：顶部圆环穿孔 → 规格行（勾选符号＋参数）→ 大数字价格区（"至高优惠 309.85 元"）→ 轻微旋转错落叠放。
+**设计要点**：
+- 圆环穿孔是灵魂，不可省略；卡片 ±2° 旋转叠放
+- 规格行用对勾＋参数，一屏 3-5 行
+- 价格区大数字＋"至高优惠"前缀，制造捡漏感
+- 适合商品参数、用户标签、优惠说明三类内容
+**UI 生成提示词**：
+```
+Mobile hang-tag cards, 9:19.5, Chinese UI, clay style.
+2 hang-tag cards with metal ring holes on top, slightly rotated overlapping.
+Spec rows with checkmarks, big price "至高优惠 309.85元".
+```
+**黏土风封面**：黑底 + 白字"设计赏析-" + 黄字"吊牌卡"；标题 `💥设计赏析｜吊牌卡`
+
+---
+
+## 48 人设选择卡 Persona Selection Card [实测：sample-84 AI 人设 6 张卡]
+**定义**：AI 人设/角色选择卡：pastel 底＋blob 小怪兽插画＋添加/已添加切换按钮。
+**通用骨架**：马卡龙色块底 → blob 小怪兽插画 → 人设名（一句话卖点）→ 黑色胶囊"添加"按钮。
+**设计要点**：
+- 一卡一色，马卡龙色系轮换（粉/蓝/绿/黄）
+- 按钮状态机：黑色"添加" → 白底"已添加"，文字＋底色双变化
+- 人设名要口语化（"小醋坛子""文言文气"），一句话说清性格
+- 网格 2 列，支持多选
+**UI 生成提示词**：
+```
+Mobile persona selection cards, 9:19.5, Chinese UI, clay style.
+2-column grid, pastel card bg (pink/blue/green/yellow rotating), blob monster illustration, persona name "小醋坛子".
+Black pill "添加" button → white "已添加" when selected.
+```
+**黏土风封面**：黑底 + 白字"设计赏析-" + 黄字"人设选择卡"；标题 `💥设计赏析｜人设选择卡`
+
+---
+
+## 49 头像选择器 Avatar Picker [实测：sample-80 请选择你想要的头像]
+**定义**：底部弹窗内的头像九宫格选择器，含自选（相机）入口。
+**通用骨架**：标题"请选择你想要的头像" → 3 列圆形头像九宫格 → "自选"相机占位格 → 取消/保存双按钮。
+**设计要点**：
+- 选中态：黄色描边＋右下对勾徽章
+- "自选"格用相机图标虚线框，区别于预设头像
+- 底部弹窗容器，保存后即时生效＋toast"头像已更新"
+- 头像本身用 IP/角色形象，保持风格统一
+**UI 生成提示词**：
+```
+Mobile avatar picker in bottom sheet, 9:19.5, Chinese UI, clay style.
+3-column round avatar grid, selected has yellow ring + check badge, dashed "自选" camera cell.
+"取消/保存" bottom buttons.
+```
+**黏土风封面**：黑底 + 白字"设计赏析-" + 黄字"头像选择器"；标题 `💥设计赏析｜头像选择器`
+
+---
+
+## 50 健康指标记录卡 Health Metric Record Card [实测：sample-88 BMI/血糖/血压/心率卡]
+**定义**：健康数据的指标卡：指标名＋大数字＋参考范围＋"记录"按钮，异常配状态徽章。
+**通用骨架**：指标名 → 大数字＋单位 → 参考范围 → 状态徽章（偏低/正常/偏高）→ 右置圆形＋"记录"按钮。
+**设计要点**：
+- 浅绿/浅蓝底圆角卡，医疗可信感
+- 异常徽章：偏低橙/偏高红/正常绿，文字＋颜色双重表达
+- "记录"用圆形＋按钮，强化行动感
+- 无数据时给"暂无体检报告"空态插画＋上传 CTA
+**UI 生成提示词**：
+```
+Mobile health metric record cards, 9:19.5, Chinese UI, light medical style.
+Cards: BMI 22.1 / 血糖 5.6 / 血压 120/80, light green rounded cards, orange "偏低" badge on abnormal, round "+" record button right.
+```
+**黏土风封面**：黑底 + 白字"设计赏析-" + 黄字"健康指标记录卡"；标题 `💥设计赏析｜健康指标记录卡`
+
+---
+
+## 51 课程等级卡 Course Level Card [实测：sample-89 萌芽期/Level 1]
+**定义**：课程分级卡：等级头（萌芽期/Level 1）＋课程大纲/适合对象/学习目标 checklist。
+**通用骨架**：顶部色块等级区（等级名＋小插画）→ 大纲 checklist（绿/橙对勾行）→ 底部半圆选中指示。
+**设计要点**：
+- 等级区用色块＋插画，一眼区分 Level
+- checklist 行：对勾＋一句话，3-5 行
+- 选中态：底部半圆指示＋卡片描边高亮
+- 横滑切换等级，配"适合我吗"测试入口更佳
+**UI 生成提示词**：
+```
+Mobile course level cards, 9:19.5, Chinese UI, clay style.
+Cards: "萌芽期" green header + mascot, checklist rows with checkmarks （大纲/适合对象/学习目标）, bottom half-circle selected indicator.
+Horizontal swipe between levels.
+```
+**黏土风封面**：黑底 + 白字"设计赏析-" + 黄字"课程等级卡"；标题 `💥设计赏析｜课程等级卡`
